@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>easyswoole(网页聊天室)</title>
+<style> 
+
+#entry_contect{ margin:160px auto; width:250px; height:110px; border:1px solid #4caf50} 
+/* css注释：为了观察效果设置宽度 边框 高度等样式 */ 
+</style> 
+
+<script src="http://39.97.98.75/swoole/easyswooleChat/App/Public/js/jquery.min.js"></script>
+<script src="http://39.97.98.75/swoole/easyswooleChat/App/Public/js/dandan.js"></script>
+<script type="text/javascript">
+$admin_name="游客";
+
+//成员数组
+$arr_user=new Array(
+Array('蛋蛋','http://39.97.98.75/swoole/easyswooleChat/App/Public/user_img/001.jpg'),
+Array('今心','http://39.97.98.75/swoole/easyswooleChat/App/Public/user_img/002.jpg'),
+Array('老猪','http://39.97.98.75/swoole/easyswooleChat/App/Public/user_img/003.jpg'),
+Array('涛涛','http://39.97.98.75/swoole/easyswooleChat/App/Public/user_img/004.jpg'),
+Array('张三'),
+Array('李四'),
+Array('王五'))
+</script>
+<link href="http://39.97.98.75/swoole/easyswooleChat/App/Public/css/dandan.css" rel="stylesheet" media="screen" type="text/css" />
+<style type="text/css">
+
+</style>
+</head>
+<body>
+
+ <div id = 'chatbody' style="padding-left: auto;display:none;"> 
+    <div id="mid_top">
+    <!--  <div class="list">
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="td_user td_user_click">老猪</td>
+            <td class="td_hide td_hide_click">X</td>
+          </tr>
+        </table>
+      </div>-->
+    </div>
+    <div id="top">头部</div>
+    <div id="body">
+      <div id="left">
+        <div class="box">
+          <h3 class="h3 h3_1">最近聊天(<span class="n_geshu_1"></span>)</h3>
+          <ul class="ul ul_1">
+            <li>老猪</li>
+          </ul>
+          <h3 class="h3 h3_2">在线列表(<span class="n_geshu_2"></span>)</h3>
+          <ul class="ul ul_2">
+            <li>蛋蛋</li>
+          </ul>
+        </div>
+        <div class="box_f"></div>
+      </div>
+      <div id="right">
+        <div class="right_box">
+          <div id="right_top">
+            <!--<p><img src="images/head.jpg" alt="头象" /></p>
+            老猪--></div>
+          <div id="right_mid"></div>
+          <div id="right_foot">蛋蛋</div>
+          <div class="blank"></div>
+        </div>
+        <div class="right_box_foot"></div>
+      </div>
+      <div id="mid">
+        <div id="mid_con">
+          <div class="my_show">
+            <div class="con_box"><div class="dandan_liaotian"><img src="http://39.97.98.75/swoole/easyswooleChat/App/Public/user_img/dandan.jpg" alt="蛋蛋聊天界面" /></div></div>
+          </div>
+        </div>
+        <div id="mid_mid"></div>
+        <div id="mid_foot">
+          <div id="mid_say">
+            <textarea name="" cols="" rows="" id="texterea"></textarea>
+          </div>
+          <div id="mid_sand">发送</div>
+          <div class="blank"></div>
+        </div>
+        <div class="mid_box"></div>
+      </div>
+    </div>
+</div>
+
+<div id="entry_contect">
+            <div   id="div1"   style="padding-left: auto;padding-right: auto;">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td>登陆名:</td><td><input  id='uname' type="text" name='username'  /></td>
+                    </tr>
+                    <tr>
+                        <td>密码:</td><td><input   id='upass' type="password" name='password'/></td>
+                    </tr>
+                    <tr >
+                        <td   colspan="3" align="center">
+                            <span class="error"></span><input class="buttonsb" type="button"  id= 'change' value="注册"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="error"></span><input class="buttonsb" type="button"  id = 'login' value="登录"/>
+                        </td>
+                    </tr>
+                </table>
+                <p id = "error" style="color: red"></p>
+
+            </form>
+            </div>
+
+    <div   id="div2"  style="padding-left: auto;display:none;">
+        <form action="/index.php?_action=user/login" method="post">
+            <table>
+                <tr>
+                    <td>昵称:</td><td><input  id='name' type="text" name='username'  /></td>
+                </tr>
+                <tr>
+                    <td>账号:</td><td><input   id='r_uname' type="text" name='oldpassword'/></td>
+                </tr>
+                <tr>
+                    <td>密码:</td><td><input   id='r_upass' type="password" name='newpassword'/></td>
+                </tr>
+                <tr >
+                    <td   colspan="3" align="center">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="error"></span><input class="buttonsb" type="button"  id = 'sendData' value="注册"/>
+                    </td>
+                </tr>
+            </table>
+            <p id = "error" style="color: red"></p>
+
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+

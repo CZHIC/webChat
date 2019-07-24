@@ -1,0 +1,20 @@
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:39]Class 'App\model\ModelUser' not found----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:39]Class 'App\model\ModelUser' not found----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:39]Class 'App\model\ModelUser' not found----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:39]Class 'App\model\ModelUser' not found----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:39]Class 'App\model\ModelUser' not found----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on null----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on null----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on string----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:80]Class 'App\HttpController\User' not found----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/mysqli/src/Mysqli.php][line:1523]Table 'chutest.chutest' doesn't exist query: SELECT  * FROM chutest----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:88]Call to a member function getTotalCount() on array----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/mysqli/src/Mysqli.php][line:1523]Unknown column '2' in 'field list' query: INSERT  INTO chutest.test1 (`2`)  VALUES (?)----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:88]Call to a member function withTotalCount() on array----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:103]Call to a member function getObj() on null----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:105]Class 'App\HttpController\UserModel' not found----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:123]Call to a member function getObj() on null----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:126]Call to a member function getObj() on null----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:126]Call to a member function getObj() on null----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/Pool/MemcachedPool.php][line:23]Call to protected method easySwoole\Cache\Connector\Memcached::connect() from context 'App\Utility\Pool\MemcachedPool'----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:125]Call to a member function set() on null----/home/wwwroot/swoole/easyswoole

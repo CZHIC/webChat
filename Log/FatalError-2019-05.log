@@ -1,0 +1,19 @@
+[2019-05-05 17:40:43][FatalError][file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php][line:55]Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501]. Error: Address already in use[98]. in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php:55
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(55): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 2, '0.0.0.0', Array, 2, 1)
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swo
+[2019-05-05 17:48:03][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 17:50:37][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:07:06][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:10:30][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:12:30][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:12:32][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:13:45][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:14:20][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:14:22][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:14:54][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error
+[2019-05-05 18:16:50][FatalError][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error

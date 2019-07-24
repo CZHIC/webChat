@@ -1,0 +1,566 @@
+测试内容
+aaaaaaa
+测试内容
+aaaaaaa
+测试内容
+aaaaaaa
+测试内容
+aaaaaaa
+测试内容
+aaaaaaa
+测试内容
+测试内容--1
+aaaaaaa
+测试内容
+测试内容--1
+测试内容--1
+测试内容--2
+pid= 1930----workerid = 23----taskid=
+aaaaaaa
+测试内容
+测试内容--1
+测试内容--2
+pid= 1974----workerid = 23----taskid=
+aaaaaaa
+测试内容
+测试内容--1
+测试内容--2
+pid= 2087----workerid = 3----taskid=
+测试内容
+测试内容--1
+测试内容--2
+pid= 2123----workerid = 3----taskid=
+测试内容
+测试内容--1
+pid= 2185----workerid = 3----taskid=0
+测试内容
+测试内容--1
+pid= 2186----workerid = 3----taskid=1
+测试内容
+测试内容--1
+pid= 2187----workerid = 3----taskid=2
+测试内容
+测试内容--1
+pid= 2335----workerid = 3----taskid=0
+测试内容
+测试内容--1
+pid= 2336----workerid = 3----taskid=1
+测试内容
+测试内容--1
+pid= 2337----workerid = 3----taskid=2
+测试内容
+测试内容--1
+pid= 3730----workerid = 3----taskid=0
+测试内容
+测试内容--1
+pid= 3731----workerid = 3----taskid=1
+测试内容
+测试内容--1
+pid= 3732----workerid = 3----taskid=2
+测试内容
+测试内容--1
+测试内容
+测试内容--1
+测试内容
+测试内容--1
+测试内容
+测试内容--1
+测试内容
+测试内容--1
+pid= 4450----workerid = 3----taskid=0
+测试内容
+测试内容--1
+pid= 4452----workerid = 3----taskid=2
+测试内容
+测试内容--1
+执行异步任务
+测试内容
+测试内容--1
+执行异步任务
+pid= 4611----workerid = 3----taskid=0
+pid= 4613----workerid = 3----taskid=2
+测试内容
+测试内容--1
+执行异步任务
+pid= 5301----workerid = 3----taskid=0
+测试内容
+测试内容--1
+执行异步任务
+pid= 5303----workerid = 3----taskid=2
+测试内容
+执行异步任务
+测试内容
+执行异步任务
+测试内容
+测试内容
+执行异步任务
+执行异步任务
+测试内容
+执行异步任务
+测试内容
+执行异步任务
+测试内容
+执行异步任务
+测试内容
+测试内容--1
+执行异步任务
+pid= 7050----workerid = 3----taskid=0
+测试内容
+测试内容--1
+pid= 7696----workerid = 3----taskid=0
+测试内容
+测试内容--1
+pid= 7741----workerid = 3----taskid=0
+测试内容
+测试内容--1
+pid= 7742----workerid = 3----taskid=1
+测试内容----/
+测试内容--1----/
+pid= 7863----workerid = 3----taskid=0----/
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+pid= 7908----workerid = 3----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/
+测试内容--1----/
+执行异步任务----/
+pid= 8560----workerid = 3----taskid=0----/
+测试内容----/
+执行异步任务----/
+测试内容--1----/
+pid= 8562----workerid = 3----taskid=2----/
+测试内容----/
+测试内容--1----/
+执行异步任务----/
+pid= 4532----workerid = 6----taskid=0----/
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 10863----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 10938----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11039----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11307----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11403----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 11405----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11442----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11515----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11572----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11649----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11689----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11853----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11848----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+pid= 11850----workerid = 5----taskid=4----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 11935----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12015----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12073----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12186----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12214----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 12216----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12352----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12501----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12598----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 12600----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12630----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12657----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 12715----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 13456----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 13516----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 19753----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 19862----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 20474----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 20476----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21039----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21088----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 21090----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21141----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21143----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+pid= 21145----workerid = 5----taskid=4----/home/wwwroot/swoole/easyswoole
+pid= 21147----workerid = 5----taskid=6----/home/wwwroot/swoole/easyswoole
+pid= 21142----workerid = 5----taskid=8----/home/wwwroot/swoole/easyswoole
+pid= 21146----workerid = 5----taskid=10----/home/wwwroot/swoole/easyswoole
+pid= 21141----workerid = 5----taskid=12----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21175----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21218----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 21212----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21250----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 21252----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21276----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 21270----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21351----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21383----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21412----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21454----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21487----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21481----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21510----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21610----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 21612----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 21920----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22000----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22105----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22148----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22279----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22434----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22670----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22722----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22903----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+pid= 22897----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 22942----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23023----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23017----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23172----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23219----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23254----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23488----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23570----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 23572----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+pid= 23566----workerid = 5----taskid=4----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24216----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24218----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24212----workerid = 5----taskid=4----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24653----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24705----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24809----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24841----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 24991----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 25266----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 4202----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 4344----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 4405----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 4443----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 4506----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 4792----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 4968----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5150----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5195----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5237----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5239----workerid = 5----taskid=2----/home/wwwroot/swoole/easyswoole
+pid= 5241----workerid = 5----taskid=4----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5327----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5332----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5532----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5583----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5640----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5720----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5888----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole
+测试内容----/home/wwwroot/swoole/easyswoole
+测试内容--1----/home/wwwroot/swoole/easyswoole
+执行异步任务----/home/wwwroot/swoole/easyswoole
+pid= 5977----workerid = 5----taskid=0----/home/wwwroot/swoole/easyswoole

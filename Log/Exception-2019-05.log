@@ -1,0 +1,9 @@
+[2019-05-05 17:48:03][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Class 'App\model\OO' not found
+[2019-05-05 17:50:37][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to undefined method App\model\OO::getInstance()
+[2019-05-05 18:07:06][Exception][file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/component/src/Di.php][line:46]Using $this when not in object context
+[2019-05-05 18:10:30][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function user() on null
+[2019-05-05 18:12:30][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on null
+[2019-05-05 18:12:32][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on null
+[2019-05-05 18:13:45][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on null
+[2019-05-05 18:14:20][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on null
+[2019-05-05 18:14:22][Exception][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Call to a member function test() on null

@@ -1,0 +1,268 @@
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error----/
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error----/
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error----/
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\CrontabOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(71): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\CrontabOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(38): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\CrontabOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(38): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class App\Crontab\CrontabOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(38): EasySwoole\EasySwoole\Crontab\Crontab->addTask('App\\Crontab\\Cro...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swoole/ea----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class App\Crontab\TaskOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(38): EasySwoole\EasySwoole\Crontab\Crontab->addTask('App\\Crontab\\Tas...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swoole/easys----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\TaskOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(39): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swo----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\TaskOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(39): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swo----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\TaskOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(39): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swo----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\TaskOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(39): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swo----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\TaskOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(39): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swo----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php][line:45]Uncaught InvalidArgumentException: the cron task class EasySwoole\EasySwoole\TaskOne is invalid in /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php(39): EasySwoole\EasySwoole\Crontab\Crontab->addTask('EasySwoole\\Easy...')
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/swo----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:52]test error----/
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:53]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:56]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:57]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:58]test error----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:155]Uncaught Error: Call to a member function addListener() on null in /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php:155
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/swoole/easyswoole/easyswoole(17): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:155]Uncaught Error: Call to a member function addListener() on null in /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php:155
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/swoole/easyswoole/easyswoole(17): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:159]Uncaught Error: Class 'EasySwoole\EasySwoole\Parser' not found in /home/wwwroot/swoole/easyswoole/EasySwooleEvent.php:159
+Stack trace:
+#0 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(123): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/swoole/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/swoole/easyswoole/easyswoole(17): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown----/home/wwwroot/swoole/easyswoole

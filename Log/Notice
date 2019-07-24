@@ -1,0 +1,54 @@
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:49]Undefined variable: taskid
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:48]Undefined variable: taskid
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:48]Undefined variable: taskid
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:48]Undefined variable: taskid
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:49]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:50]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:49]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:50]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:49]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:50]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:49]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/Utility/AsyncTask.php][line:50]Undefined variable: str
+[file:/home/wwwroot/swoole/easyswoole/App/console/DefConsole.php][line:101]Only variables should be passed by reference----/
+[file:/home/wwwroot/swoole/easyswoole/App/console/DefConsole.php][line:101]Only variables should be passed by reference----/
+[file:/home/wwwroot/swoole/easyswoole/App/console/DefConsole.php][line:102]Only variables should be passed by reference----/
+[file:/home/wwwroot/swoole/easyswoole/App/console/DefConsole.php][line:102]Only variables should be passed by reference----/
+[file:/home/wwwroot/swoole/easyswoole/App/console/DefConsole.php][line:102]Only variables should be passed by reference----/
+[file:/home/wwwroot/swoole/easyswoole/App/console/DefConsole.php][line:102]Only variables should be passed by reference----/
+[file:/home/wwwroot/swoole/easyswoole/App/console/DefConsole.php][line:102]Only variables should be passed by reference----/
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:37]Undefined index: user----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:37]Undefined index: user----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:37]Undefined index: user----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:37]Undefined index: user----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:37]Undefined index: user----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:37]Undefined index: user----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:42]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:42]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:42]Undefined variable: PATH_MOD----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:53]Array to string conversion----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:53]Array to string conversion----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:53]Array to string conversion----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:53]Array to string conversion----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:96]Undefined variable: data----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:96]Undefined variable: data----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:135]Undefined variable: data2----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:155]Undefined variable: server----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:155]Undefined variable: server----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:201]Undefined variable: dispatch----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/CliExample/udpClient.php][line:21]Undefined variable: str----/home/wwwroot/swoole/easyswoole/CliExample
+
+
+
+
+
+
+
+
+[file:/home/wwwroot/swoole/easyswoole/CliExample/udpClient.php][line:26]Undefined variable: str

@@ -1,0 +1,21 @@
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(/Utility/TaskOne.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(): Failed opening '/Utility/TaskOne.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(/Utility/TaskOne.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(): Failed opening '/Utility/TaskOne.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(./Utility/TaskOne.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(): Failed opening './Utility/TaskOne.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(./Utility/TaskOne.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/EasySwooleEvent.php][line:38]include_once(): Failed opening './Utility/TaskOne.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(modelUser.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(): Failed opening 'modelUser.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(modelUser.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(): Failed opening 'modelUser.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(modelUser.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(): Failed opening 'modelUser.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(modelUser.php): failed to open stream: No such file or directory----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/App/model/OO.php][line:38]include_once(): Failed opening 'modelUser.php' for inclusion (include_path='.:/usr/local/php/lib/php')----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/CliExample/tcpClient.php][line:21]Swoole\Client::recv(): recv() failed. Error: Resource temporarily unavailable [11]----/home/wwwroot/swoole/easyswoole/CliExample
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php][line:124]Swoole\Server::exist() expects parameter 1 to be integer, array given----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php][line:124]Swoole\Server::exist() expects parameter 1 to be integer, array given----/home/wwwroot/swoole/easyswoole
+[file:/home/wwwroot/swoole/easyswoole/CliExample/udpClient.php][line:21]Swoole\Client::send(): data to send is empty.----/home/wwwroot/swoole/easyswoole/CliExample
+[file:/home/wwwroot/swoole/easyswoole/CliExample/udpClient.php][line:26]Swoole\Client::send(): data to send is empty.

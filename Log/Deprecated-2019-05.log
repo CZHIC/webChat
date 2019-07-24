@@ -1,0 +1,1 @@
+[2019-05-05 18:07:06][Deprecated][file:/home/wwwroot/swoole/easyswoole/App/HttpController/Test.php][line:79]Non-static method EasySwoole\Component\Di::get() should not be called statically
