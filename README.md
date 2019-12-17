@@ -5,7 +5,8 @@ php7.2  swoole4.4  easyswoole3.3.4
 php easyswoole  start  
 php easyswoole  stop
 php easyswoole  reload
-# 默认开启了守护进程模式 ， 可以在dev.php修改daemonize = 0， 转为控制台模式
+
+### 默认开启了守护进程模式 ， 可以在dev.php修改daemonize = 0， 转为控制台模式
 
 
 
@@ -43,5 +44,6 @@ CREATE TABLE `chatuser` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='聊天室用户表';
 
 
-
+### 在线demo地址
+http://www.czc123.top/swoole/easyswooleChat/App/Public/index.html
 测试账号 ：  admin   123456
