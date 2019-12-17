@@ -1,0 +1,159 @@
+[2019-12-17 11:05:18][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:05:18][DEBUG][ERROR] : [Swoole\Server::start(): failed to start server. Error: swServer_start_check: onTask event callback must be set at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easyswoole/src/ServerManager.php line:140]
+[2019-12-17 11:06:58][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:104]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:127]
+[2019-12-17 11:06:58][DEBUG][WARNING] : [swoole_set_process_name(): cli_set_process_title had an error: Not initialized correctly at file:/usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php line:112]
+[2019-12-17 11:06:58][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:08:26][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:08:26][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:09:42][DEBUG][ERROR] : [Uncaught Error: Class 'App\WebSocket\DbManager' not found in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:121
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easyswoole/src/ServerM at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:121]
+[2019-12-17 11:11:44][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:11:44][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:11:59][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S02] [1146] Table 'chutest.？' doesn't exist in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from \xEF...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(123): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Serve at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php line:94]
+[2019-12-17 11:12:38][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S02] [1146] Table 'chutest.？' doesn't exist in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from \xEF...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(123): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Serve at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php line:94]
+[2019-12-17 11:17:04][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:17:04][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:17:17][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S02] [1146] Table 'easyswoole_orm.？' doesn't exist in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from \xEF...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(123): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocke at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php line:94]
+[2019-12-17 11:20:28][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:20:28][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:20:49][DEBUG][ERROR] : [Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S22] [1054] Unknown column 'admin' in 'where clause' in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from e...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(124): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\S at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php line:94]
+[2019-12-17 11:21:28][DEBUG][ERROR] : [Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:133]
+[2019-12-17 11:24:13][DEBUG][ERROR] : [Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:133]
+[2019-12-17 11:24:58][DEBUG][ERROR] : [Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:133]
+[2019-12-17 11:25:02][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:25:02][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:25:11][DEBUG][ERROR] : [Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:133]
+[2019-12-17 11:26:11][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:26:12][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:26:19][DEBUG][ERROR] : [Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:133]
+[2019-12-17 11:31:24][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:31:24][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:31:28][DEBUG][ERROR] : [Uncaught Error: Call to undefined function App\model\object_to_array() in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSock at file:/usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php line:72]
+[2019-12-17 11:31:56][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:31:56][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:32:03][DEBUG][ERROR] : [Uncaught Error: Call to undefined function App\model\object_to_array() in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSock at file:/usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php line:72]
+[2019-12-17 11:32:48][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:32:48][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:32:57][DEBUG][ERROR] : [Uncaught Error: Call to undefined function App\model\object_to_array() in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSock at file:/usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php line:72]
+[2019-12-17 11:35:07][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:35:07][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:35:15][DEBUG][ERROR] : [Uncaught Error: Using $this when not in object context in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Obje at file:/usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php line:72]
+[2019-12-17 11:36:14][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:36:14][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:36:21][DEBUG][NOTICE] : [Undefined index: name at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:134]
+[2019-12-17 11:36:21][DEBUG][NOTICE] : [Undefined index: uname at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:134]
+[2019-12-17 11:36:21][DEBUG][NOTICE] : [Undefined index: name at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:155]
+[2019-12-17 11:44:38][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:44:38][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:44:59][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\ORM\Utility\TableObjectGeneration::__construct() must implement interface EasySwoole\ORM\Db\ConnectionInterface, null given, called in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php on line 121 and defined in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Utility/TableObjectGeneration.php:28
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php(121): EasySwoole\ORM\Utility\TableObjectGeneration->__construct(NULL, 'chatuser')
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Utility/PreProcess.php(18): EasySwoole\ORM\AbstractModel->schemaInfo()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php(561): EasySwoole\ORM\Utility\PreProcess::mappingWhere(Object(EasySwoole\Mysqli\QueryBuilder), NULL, Object(App\Models\UserModel))
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Abs at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Utility/TableObjectGeneration.php line:28]
+[2019-12-17 11:47:58][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:47:59][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:48:08][DEBUG][NOTICE] : [Undefined variable: data at file:/usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php line:127]
+[2019-12-17 11:53:01][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:53:01][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]
+[2019-12-17 11:54:07][DEBUG][ERROR] : [Uncaught EasySwoole\ORM\Exception\Exception: save() needs primaryKey for model App\Models\UserModel in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php:475
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(101): EasySwoole\ORM\AbstractModel->save()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->register()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"regi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasyS at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php line:475]
+[2019-12-17 11:56:13][DEBUG][NOTICE] : [Undefined index: size at file:/usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/component/src/TableManager.php line:35]
+[2019-12-17 11:56:13][DEBUG][INFO] : [Module 'redis' already loaded at file:Unknown line:0]

@@ -1,29 +1,16 @@
 <?php
 /**
- * 共享内存 swoole_table
- * PHP version 7
- * swoole4.3
- *
- * @category Null
- * @package  Null
- * @author   Display NAme <chuzhichao@yiihua.com>
- * @license  www.yiihua.com chuzhchao
- * @link     www.yiihua.com
+ * Created by PhpStorm.
+ * User: yf
+ * Date: 2018-12-27
+ * Time: 15:54
  */
 
 namespace EasySwoole\Component;
+
+
 use Swoole\Table;
 
-
-/**
- * 测试用例
- *
- * @category Null
- * @package  Null
- * @author   Display NAme <chuzhichao@yiihua.com>
- * @license  www.yiihua.com chuzhchao
- * @link     www.yiihua.com
- */
 class TableManager
 {
     use Singleton;

@@ -15,12 +15,15 @@ return [
         'SOCK_TYPE' => SWOOLE_TCP,
         'RUN_MODEL' => SWOOLE_PROCESS,
         'SETTING' => [
-            'worker_num' => 1,
-            'max_request' => 5000,
-            'task_worker_num' => 1,
-            'task_max_request' => 1000,
-            'daemonize' => 1 , //守护进程设置
+            'worker_num' => 8,
+            'reload_async' => true,  // 设置异步重启开关。设置为true时，将启用异步安全重启特性，Worker进程会等待异步事件完成后再退出
+            'max_wait_time'=>15,  // 热更新时最大等待时间，超过这个时间强制重启
         ],
+        'TASK'=>[
+            'workerNum'=>4,
+            'maxRunningNum'=>128,
+            'timeout'=>15
+         ],
     ],
     'TEMP_DIR' => null,
     'LOG_DIR' => null,

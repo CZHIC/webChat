@@ -36,7 +36,7 @@ class Stop implements CommandInterface
         $Conf = Config::getInstance();
         $pidFile = $Conf->getConf("MAIN_SERVER.SETTING.pid_file");
         if (file_exists($pidFile)) {
-            $pid = file_get_contents($pidFile);
+            $pid = intval(file_get_contents($pidFile));
             if (!\swoole_process::kill($pid, 0)) {
                 return "PID :{$pid} not exist ";
             }
@@ -56,8 +56,8 @@ class Stop implements CommandInterface
                     return "server stop at " . date("Y-m-d H:i:s") ;
                     break;
                 } else {
-                    if (time() - $time > 5) {
-                        return "stop server fail.try -f again ";
+                    if (time() - $time > 15) {
+                        return "stop server fail , try : php easyswoole stop force";
                         break;
                     }
                 }
@@ -74,11 +74,12 @@ class Stop implements CommandInterface
         $logo = Utility::easySwooleLog();
         return $logo.<<<HELP_START
 \e[33mOperation:\e[0m
-\e[31m  php easyswoole stop [arg1] \e[0m
+\e[31m  php easyswoole stop [arg1] [arg2]\e[0m
 \e[33mIntro:\e[0m
 \e[36m  to stop current easyswoole server \e[0m
 \e[33mArg:\e[0m
 \e[32m  force \e[0m                   force to kill server
+\e[32m  produce \e[0m                 load produce.php
 HELP_START;
     }
 }

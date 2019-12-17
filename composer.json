@@ -7,8 +7,10 @@
     "require": {
         "easyswoole/easyswoole": "3.x",
         "easyswoole/swoole-ide-helper": "^1.2",
-        "easyswoole/mysqli": "^1.1",
+        "easyswoole/mysqli": "^2.1",
         "easyswoole/cache": "^1.1",
-        "easyswoole/socket": "^1.1"
+        "easyswoole/socket": "^1.1",
+        "easyswoole/orm": "^1.2",
+        "easyswoole/pool": "^1.0"
     }
 }

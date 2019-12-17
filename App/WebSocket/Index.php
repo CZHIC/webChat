@@ -15,10 +15,12 @@ namespace App\WebSocket;
 use EasySwoole\EasySwoole\ServerManager;
 use EasySwoole\EasySwoole\Swoole\Task\TaskManager;
 use EasySwoole\Socket\AbstractInterface\Controller;
-use App\Utility\Pool\MysqlPool;
 use EasySwoole\Component\Di;   // 单例
-use EasySwoole\Component\Pool\PoolManager;
+use EasySwoole\Mysqli\QueryBuilder;
 use EasySwoole\Component\TableManager; //共享内存
+
+use EasySwoole\ORM\DbManager;
+use App\Models\UserModel;
 
 /**
  * Class Index
@@ -87,13 +89,16 @@ class Index extends Controller
         $uname =  Di::getInstance()->get('Fuc')->escape($param['uname']);
         $name  =  Di::getInstance()->get('Fuc')->escape($param['name']);
         $upass = $param['upass'];
-        $db = PoolManager::getInstance()->getPool(MysqlPool::class)->getObj();
-        $table_name =  'chutest.chatuser';
-        $data = $db->where('uname', $uname, '=')->get($table_name, null, 'id,name');
+    
+        $data = UserModel::create()->where('uname',$uname)->findOne();
         if ($data) {
             $this->response()->setMessage(json_encode(array('act'=>'register',  'code'=>1,  'err'=>'用户名已存在!')));
         } else {
-            $insert_id = $db->insert($table_name, array('name'=>$name,'uname'=>$uname , 'upass'=>$upass));
+            $insert_id = UserModel::create([
+              'name' => $name,
+              'uname' => $uname,
+              'upass' => $upass,
+            ])->save();
             $msg = "注册成功，请登录";
             if (!$insert_id) {
                 $msg  = '数据库错误，请重试';
@@ -113,10 +118,8 @@ class Index extends Controller
         $upass = $param['upass'];
         $fd    = $this->caller()->getClient()->getFd();
         echo 'fd :'.$fd."\n";
-        $db = PoolManager::getInstance()->getPool(MysqlPool::class)->getObj();
-        $table_name =  'chutest.chatuser';
-        $data = $db->where('uname', $uname, '=')->where('upass', $upass, '=')->getOne($table_name, 'id,name,uname');
-        if ($data) {
+        $data = UserModel::create()->where('uname',$uname)->findOne();
+        if ($data['upass'] == $upass) {
             $table = TableManager::getInstance()->get('UserOnline');
 
             $table->set($fd,  ['fd'=>$fd , 'name'=>$data['name'] , 'uname'=>$data['uname'] , 'pic'=> 'http://39.97.98.75/swoole/easyswooleChat/App/Public/user_img/00'.rand(1, 4).'.jpg' ]);
@@ -139,9 +142,7 @@ class Index extends Controller
                     }
                 }
             }
-
             $this->response()->setMessage(json_encode(array('act'=>'login',  'code'=>0,  'err'=>'登录成功' , 'name'=>$data['name'])));
-
         } else {
             $this->response()->setMessage(json_encode(array('act'=>'login','code'=>1,'err'=>'用户名或密码错误')));
         }

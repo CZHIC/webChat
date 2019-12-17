@@ -11,7 +11,6 @@ namespace EasySwoole\Http\AbstractInterface;
 use EasySwoole\Http\Message\Status;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
-use EasySwoole\Http\Session\SessionDriver;
 use EasySwoole\Validate\Validate;
 
 abstract class Controller
@@ -19,54 +18,61 @@ abstract class Controller
     private $request;
     private $response;
     private $actionName;
-    private $session;
-    private $sessionDriver = SessionDriver::class;
-    private $allowMethods = [];
     private $defaultProperties = [];
+    private $allowMethodReflections = [];
+    private $propertyReflections = [];
 
     function __construct()
     {
+        $forbidList = [
+            '__hook', '__destruct',
+            '__clone', '__construct', '__call',
+            '__callStatic', '__get', '__set',
+            '__isset', '__unset', '__sleep',
+            '__wakeup', '__toString', '__invoke',
+            '__set_state', '__clone', '__debugInfo',
+            'onRequest'
+        ];
+
         //支持在子类控制器中以private，protected来修饰某个方法不可见
-        $list = [];
         $ref = new \ReflectionClass(static::class);
         $public = $ref->getMethods(\ReflectionMethod::IS_PUBLIC);
         foreach ($public as $item) {
-            array_push($list, $item->getName());
+            if((!in_array($item->getName(),$forbidList)) && (!$item->isStatic())){
+                $this->allowMethodReflections[$item->getName()] = $item;
+            }
         }
-        $this->allowMethods = array_diff($list,
-            [
-                '__hook', '__destruct',
-                '__clone', '__construct', '__call',
-                '__callStatic', '__get', '__set',
-                '__isset', '__unset', '__sleep',
-                '__wakeup', '__toString', '__invoke',
-                '__set_state', '__clone', '__debugInfo'
-            ]
-        );
+
         //获取，生成属性默认值
         $ref = new \ReflectionClass(static::class);
         $properties = $ref->getProperties();
         foreach ($properties as $property) {
-            //不重置静态变量
-            if (($property->isPublic() || $property->isProtected()) && !$property->isStatic()) {
+            //不重置静态变量与保护私有变量
+            if ($property->isPublic() && !$property->isStatic()) {
                 $name = $property->getName();
-                $this->defaultProperties[$name] = $this->$name;
+                $this->defaultProperties[$name] = $this->{$name};
+                $this->propertyReflections[$name] = $property;
             }
         }
     }
 
     abstract function index();
 
+    protected function getAllowMethodReflections()
+    {
+        return $this->allowMethodReflections;
+    }
+
+    protected function getPropertyReflections():array
+    {
+        return $this->propertyReflections;
+    }
+
     protected function gc()
     {
-        // TODO: Implement gc() method.
-        if ($this->session instanceof SessionDriver) {
-            $this->session->writeClose();
-            $this->session = null;
-        }
         //恢复默认值
         foreach ($this->defaultProperties as $property => $value) {
-            $this->$property = $value;
+            $this->{$property} = $value;
         }
     }
 
@@ -94,7 +100,7 @@ abstract class Controller
         return $this->actionName;
     }
 
-    public function __hook(?string $actionName, Request $request, Response $response)
+    public function __hook(?string $actionName, Request $request, Response $response,callable $actionHook = null)
     {
         $forwardPath = null;
         $this->request = $request;
@@ -102,8 +108,12 @@ abstract class Controller
         $this->actionName = $actionName;
         try {
             if ($this->onRequest($actionName) !== false) {
-                if (in_array($actionName, $this->allowMethods)) {
-                    $forwardPath = $this->$actionName();
+                if (isset($this->allowMethodReflections[$actionName])) {
+                    if($actionHook){
+                        $forwardPath = call_user_func($actionHook);
+                    }else{
+                        $forwardPath = $this->$actionName();
+                    }
                 } else {
                     $forwardPath = $this->actionNotFound($actionName);
                 }
@@ -159,7 +169,7 @@ abstract class Controller
         return json_decode($this->request()->getBody()->__toString(), true);
     }
 
-    protected function xml($options = LIBXML_NOERROR, string $className = 'SimpleXMLElement')
+    protected function xml($options = LIBXML_NOERROR | LIBXML_NOCDATA, string $className = 'SimpleXMLElement')
     {
         //禁止引用外部xml实体
         libxml_disable_entity_loader(true);
@@ -169,20 +179,5 @@ abstract class Controller
     protected function validate(Validate $validate)
     {
         return $validate->validate($this->request()->getRequestParam());
-    }
-
-    protected function session(\SessionHandlerInterface $sessionHandler = null): SessionDriver
-    {
-        if ($this->session == null) {
-            $class = $this->sessionDriver;
-            $this->session = new $class($this->request, $this->response, $sessionHandler);
-        }
-        return $this->session;
-    }
-
-    protected function sessionDriver(string $sessionDriver): Controller
-    {
-        $this->sessionDriver = $sessionDriver;
-        return $this;
     }
 }

@@ -25,10 +25,11 @@ use App\WebSocket\WebSocketParser;
 use App\model\OO;
 use EasySwoole\Component\TableManager; // 共享内存
 use swoole\table;
-//连接池
-use App\Utility\Pool\MysqlPool;
-use EasySwoole\Component\Pool\PoolManager;
-use EasySwoole\Mysqli\Mysqli;
+//orm
+use EasySwoole\ORM\DbManager;
+use EasySwoole\ORM\Db\Connection;
+use EasySwoole\ORM\Db\Config;
+
 
 
 /**
@@ -53,23 +54,7 @@ class EasySwooleEvent implements Event
     public static function initialize()
     {
         date_default_timezone_set('Asia/Shanghai');
-        //单例模式 -- 注册类
-        Di::getInstance()->set(SysConst::LOGGER_HANDLER, \App\Utility\Logger::class);  // 重写Log类
-        $instance = \EasySwoole\EasySwoole\Config::getInstance();
-        
-        //单例管理
-        $oo = new OO();
-        $oo->run();
-
-          //注册mysql连接池 --------------------------------------------
-        $mysqlConf =  PoolManager::getInstance()->register(MysqlPool::class, Config::getInstance()->getConf('MYSQL.POOL_MAX_NUM'));
-        if ($mysqlConf === null) {
-            //当返回null时,代表注册失败,无法进行再次的配置修改
-            //注册失败不一定要抛出异常,因为内部实现了自动注册,不需要注册也能使用
-            throw new \Exception('注册失败!');
-        }
-        //设置其他参数
-        $mysqlConf->setMaxObjectNum(20)->setMinObjectNum(5);
+      
     }
 
     /**
@@ -81,7 +66,21 @@ class EasySwooleEvent implements Event
      */
     public static function mainServerCreate(EventRegister $register)
     {
-         $swooleServer = ServerManager::getInstance()->getSwooleServer();
+        $swooleServer = ServerManager::getInstance()->getSwooleServer();
+
+        //注册mysql链接
+        $config = new Config();
+        $config->setDatabase('easyswoole_orm');
+        $config->setUser('root');
+        $config->setPassword('123456');
+        $config->setHost('127.0.0.1');
+        //连接池配置
+        $config->setGetObjectTimeout(3.0); //设置获取连接池对象超时时间
+        $config->setIntervalCheckTime(30*1000); //设置检测连接存活执行回收和创建的周期
+        $config->setMaxIdleTime(15); //连接池对象最大闲置时间(秒)
+        $config->setMaxObjectNum(20); //设置最大连接池存在连接对象数量
+        $config->setMinObjectNum(5); //设置最小连接池存在连接对象数量
+        DbManager::getInstance()->addConnection(new Connection($config),'masterdb');
 
           //注册一张内存表
         TableManager::getInstance()->add(
@@ -117,12 +116,15 @@ class EasySwooleEvent implements Event
         $register->add(
             $register::onWorkerStart,
             function (\swoole_server $serv, int $workid) {
+                 //单例管理
+                $oo = new OO();
+                $oo->run();
                 if ($workid >= $serv->setting['worker_num']) {
                         $msg= "Taskwoker ".$workid.'start'."\n";
                         swoole_set_process_name("chat_swoole_taskworker_{$workid}");
                 } else {
-                    $msg =  "wroker ".$workid.'start'."\n";
-                    swoole_set_process_name("chat_swoole_worker_{$workid}");
+                        $msg =  "wroker ".$workid.'start'."\n";
+                        swoole_set_process_name("chat_swoole_worker_{$workid}");
                 }
                 echo $msg;
             }
@@ -144,12 +146,10 @@ class EasySwooleEvent implements Event
             EventRegister::onMessage, function (\swoole_websocket_server $server, \swoole_websocket_frame $frame) use ($dispatch) {
                 // {"class":"Index","action":"index","content":{"name":"\u4ed9\u58eb\u53ef"}}
                 //具体解析流程   $conf->setParser(new WebSocketParser()); 
-
                 var_dump($frame);
                 $dispatch->dispatch($server, $frame->data, $frame);
             }
         );
-
          //自定义握手事件
         $websocketEvent = new WebSocketEvent();
         $register->set(

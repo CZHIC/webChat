@@ -33,16 +33,19 @@ class Validate
      * 添加一个待验证字段
      * @param string $name
      * @param null|string $alias
+     * @param bool $reset
      * @return Rule
      */
-    public function addColumn(string $name, ?string $alias = null): Rule
+    public function addColumn(string $name, ?string $alias = null,bool $reset = false): Rule
     {
-        $rule = new Rule();
-        $this->columns[$name] = [
-            'alias' => $alias,
-            'rule'  => $rule
-        ];
-        return $rule;
+        if(!isset($this->columns[$name]) || $reset){
+            $rule = new Rule();
+            $this->columns[$name] = [
+                'alias' => $alias,
+                'rule'  => $rule
+            ];
+        }
+        return $this->columns[$name]['rule'];
     }
 
     /**
@@ -62,8 +65,9 @@ class Validate
             /*
              * 优先检测是否带有optional选项
              * 如果设置了optional又不存在对应字段，则跳过该字段检测
+             * 额外的如果这个字段是空字符串一样会认为不存在该字段
              */
-            if (isset($rules['optional']) && !isset($data[$column])) {
+            if (isset($rules['optional']) && (!isset($data[$column]) || $data[$column] === '')) {
                 $this->verifiedData[$column] = $spl->get($column);
                 continue;
             }
@@ -163,7 +167,7 @@ class Validate
      * 给定的参数是否在 $min $max 之间
      * @param SplArray $splArray
      * @param string $column
-     * @param $arg
+     * @param $args
      * @return bool
      */
     private function between(SplArray $splArray, string $column, $args): bool
@@ -204,6 +208,7 @@ class Validate
      * @param SplArray     $splArray
      * @param string       $column
      * @param null|integer $arg
+     * @return bool
      */
     private function decimal(SplArray $splArray, string $column, $arg): bool
     {
@@ -281,14 +286,96 @@ class Validate
      * 验证值是否相等
      * @param SplArray $splArray
      * @param string $column
-     * @param $arg
+     * @param $args
      * @return bool
      */
-    private function equal(SplArray $splArray, string $column, $arg): bool
+    private function equal(SplArray $splArray, string $column, $args): bool
     {
         $data = $splArray->get($column);
-        if ($data !== $arg) {
-            return false;
+        $value = array_shift($args);
+        $strict = array_shift($args);
+        if ($strict) {
+            if ($data !== $value) {
+                return false;
+            }
+        } else {
+            if ($data != $value) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 验证值是否不相等
+     * @param SplArray $splArray
+     * @param string $column
+     * @param $args
+     * @return bool
+     */
+    private function different(SplArray $splArray, string $column, $args): bool
+    {
+        $data = $splArray->get($column);
+        $value = array_shift($args);
+        $strict = array_shift($args);
+        if ($strict) {
+            if ($data === $value) {
+                return false;
+            }
+        } else {
+            if ($data == $value) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 验证值是否相等
+     * @param SplArray $splArray
+     * @param string $column
+     * @param $args
+     * @return bool
+     */
+    private function equalWithColumn(SplArray $splArray, string $column, $args): bool
+    {
+        $data = $splArray->get($column);
+        $fieldName = array_shift($args);
+        $strict = array_shift($args);
+        $value = $splArray->get($fieldName);
+        if ($strict) {
+            if ($data !== $value) {
+                return false;
+            }
+        } else {
+            if ($data != $value) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 验证值是否不相等
+     * @param SplArray $splArray
+     * @param string $column
+     * @param $args
+     * @return bool
+     */
+    private function differentWithColumn(SplArray $splArray, string $column, $args): bool
+    {
+        $data = $splArray->get($column);
+        $fieldName = array_shift($args);
+        $strict = array_shift($args);
+        $value = $splArray->get($fieldName);
+        if ($strict) {
+            if ($data === $value) {
+                return false;
+            }
+        } else {
+            if ($data == $value) {
+                return false;
+            }
         }
         return true;
     }

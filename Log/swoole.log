@@ -18054,3 +18054,160 @@ Taskwoker 15start
 [2019-05-07 18:34:07 #7980.1]	WARNING	swSignalfd_onSignal (ERROR 707): Unable to find callback function for signal Hangup: 1.
 [2019-05-07 18:34:07 $7981.0]	WARNING	swManager_check_exit_status: worker#17[pid=8000] abnormal exit, status=0, signal=1
 [2019-05-08 15:16:40 #7980.1]	NOTICE	Server is shutdown now.
+[2019-12-17 11:09:42 *41803.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class 'App\WebSocket\DbManager' not found in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:121
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easyswoole/src/ServerM in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php on line 121
+[2019-12-17 11:09:42 $41797.0]	WARNING	swManager_check_exit_status: worker#5[pid=41803] abnormal exit, status=255, signal=0
+[2019-12-17 11:11:32 $41797.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:11:59 *47153.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S02] [1146] Table 'chutest.？' doesn't exist in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from \xEF...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(123): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Serve in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php on line 94
+[2019-12-17 11:11:59 $47147.0]	WARNING	swManager_check_exit_status: worker#5[pid=47153] abnormal exit, status=255, signal=0
+[2019-12-17 11:12:25 $47147.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:12:38 *48351.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S02] [1146] Table 'chutest.？' doesn't exist in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from \xEF...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(123): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Serve in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php on line 94
+[2019-12-17 11:12:38 $47147.0]	WARNING	swManager_check_exit_status: worker#5[pid=48351] abnormal exit, status=255, signal=0
+[2019-12-17 11:17:17 *56301.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S02] [1146] Table 'easyswoole_orm.？' doesn't exist in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from \xEF...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(123): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocke in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php on line 94
+[2019-12-17 11:17:17 $56243.0]	WARNING	swManager_check_exit_status: worker#5[pid=56301] abnormal exit, status=255, signal=0
+[2019-12-17 11:20:16 $56243.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:20:23 $56243.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:20:49 *62031.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Mysqli\Exception\Exception: SQLSTATE[42S22] [1054] Unknown column 'admin' in 'where clause' in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php:94
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Db/MysqliClient.php(23): EasySwoole\Mysqli\Client->rawQuery('select * from e...', 30)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/DbManager.php(71): EasySwoole\ORM\Db\MysqliClient->query(Object(EasySwoole\Mysqli\QueryBuilder), true)
+#2 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(124): EasySwoole\ORM\DbManager->query(Object(EasySwoole\Mysqli\QueryBuilder), true, 'default')
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\S in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/mysqli/src/Client.php on line 94
+[2019-12-17 11:20:49 $62025.0]	WARNING	swManager_check_exit_status: worker#5[pid=62031] abnormal exit, status=255, signal=0
+[2019-12-17 11:21:20 $62025.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:21:28 *63532.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php on line 133
+[2019-12-17 11:21:28 $62025.0]	WARNING	swManager_check_exit_status: worker#5[pid=63532] abnormal exit, status=255, signal=0
+[2019-12-17 11:24:13 *63599.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php on line 133
+[2019-12-17 11:24:13 $62025.0]	WARNING	swManager_check_exit_status: worker#5[pid=63599] abnormal exit, status=255, signal=0
+[2019-12-17 11:24:58 *68249.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php on line 133
+[2019-12-17 11:24:58 $62025.0]	WARNING	swManager_check_exit_status: worker#5[pid=68249] abnormal exit, status=255, signal=0
+[2019-12-17 11:25:11 *69729.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php on line 133
+[2019-12-17 11:25:11 $69723.0]	WARNING	swManager_check_exit_status: worker#5[pid=69729] abnormal exit, status=255, signal=0
+[2019-12-17 11:26:19 *71514.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Cannot use object of type EasySwoole\ORM\Db\Result as array in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php:133
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/easy in /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php on line 133
+[2019-12-17 11:26:19 $71508.0]	WARNING	swManager_check_exit_status: worker#5[pid=71514] abnormal exit, status=255, signal=0
+[2019-12-17 11:29:52 $71508.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:30:01 $71508.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:30:19 $71508.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:30:28 $71508.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:31:13 $71508.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:31:28 *80571.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to undefined function App\model\object_to_array() in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSock in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php on line 72
+[2019-12-17 11:31:28 $80565.0]	WARNING	swManager_check_exit_status: worker#5[pid=80571] abnormal exit, status=255, signal=0
+[2019-12-17 11:32:03 *81470.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to undefined function App\model\object_to_array() in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSock in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php on line 72
+[2019-12-17 11:32:03 $81464.0]	WARNING	swManager_check_exit_status: worker#5[pid=81470] abnormal exit, status=255, signal=0
+[2019-12-17 11:32:57 *82960.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to undefined function App\model\object_to_array() in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSock in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php on line 72
+[2019-12-17 11:32:57 $82954.0]	WARNING	swManager_check_exit_status: worker#5[pid=82960] abnormal exit, status=255, signal=0
+[2019-12-17 11:35:04 $82954.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:35:15 *86842.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Using $this when not in object context in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php:72
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(125): App\model\ModelFuc::object_to_array(Array)
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->login()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"logi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Obje in /usr/local/var/swoole_test/easyswooleChat/App/model/ModelFuc.php on line 72
+[2019-12-17 11:35:15 $86836.0]	WARNING	swManager_check_exit_status: worker#5[pid=86842] abnormal exit, status=255, signal=0
+[2019-12-17 11:36:11 $86836.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:39:04 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:39:06 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:39:55 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:40:46 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:40:49 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:41:01 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:43:12 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:44:34 $88646.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:44:59 *2978.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught TypeError: Argument 1 passed to EasySwoole\ORM\Utility\TableObjectGeneration::__construct() must implement interface EasySwoole\ORM\Db\ConnectionInterface, null given, called in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php on line 121 and defined in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Utility/TableObjectGeneration.php:28
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php(121): EasySwoole\ORM\Utility\TableObjectGeneration->__construct(NULL, 'chatuser')
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Utility/PreProcess.php(18): EasySwoole\ORM\AbstractModel->schemaInfo()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php(561): EasySwoole\ORM\Utility\PreProcess::mappingWhere(Object(EasySwoole\Mysqli\QueryBuilder), NULL, Object(App\Models\UserModel))
+#3 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Abs in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/Utility/TableObjectGeneration.php on line 28
+[2019-12-17 11:44:59 $2972.0]	WARNING	swManager_check_exit_status: worker#5[pid=2978] abnormal exit, status=255, signal=0
+[2019-12-17 11:47:32 $2972.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:47:34 $2972.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:47:51 $2972.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:49:03 $8410.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:49:32 $8410.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:49:38 $8410.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:50:37 $8410.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:52:43 $8410.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:52:52 $8410.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:52:58 $8410.0]	INFO	Server is reloading all workers now
+[2019-12-17 11:54:07 *17250.6]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\ORM\Exception\Exception: save() needs primaryKey for model App\Models\UserModel in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php:475
+Stack trace:
+#0 /usr/local/var/swoole_test/easyswooleChat/App/WebSocket/Index.php(101): EasySwoole\ORM\AbstractModel->save()
+#1 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(124): App\WebSocket\Index->register()
+#2 /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/socket/src/Dispatcher.php(82): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#3 /usr/local/var/swoole_test/easyswooleChat/EasySwooleEvent.php(151): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"action":"regi...', Object(Swoole\WebSocket\Frame))
+#4 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasyS in /usr/local/var/swoole_test/easyswooleChat/vendor/easyswoole/orm/src/AbstractModel.php on line 475
+[2019-12-17 11:54:07 $17208.0]	WARNING	swManager_check_exit_status: worker#6[pid=17250] abnormal exit, status=255, signal=0

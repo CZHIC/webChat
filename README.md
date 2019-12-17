@@ -1,5 +1,5 @@
 ### 环境要求
-php7 swoole4.3  easyswoole3.x
+php7.2  swoole4.4  easyswoole3.3.4
 
 ### 启动方式
 php easyswoole  start  
@@ -25,7 +25,7 @@ App/Public/index.html   客户端聊天页面  （记得修改里面的请求地
 
 ### 数据表
 --
--- Database: `chutest`
+-- Database: `easyswoole_orm`
 --
 
 -- --------------------------------------------------------
@@ -35,20 +35,13 @@ App/Public/index.html   客户端聊天页面  （记得修改里面的请求地
 --
 
 CREATE TABLE `chatuser` (
-  `id` int(10) UNSIGNED NOT NULL COMMENT '记录ID',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '记录ID',
   `name` varchar(100) DEFAULT NULL COMMENT '昵称',
   `uname` varchar(100) DEFAULT NULL COMMENT '登录名',
-  `upass` varchar(100) DEFAULT NULL COMMENT '登录密码'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='聊天室用户表';
-
---
--- 转存表中的数据 `chatuser`
---
-
-INSERT INTO `chatuser` (`id`, `name`, `uname`, `upass`) VALUES
-(3, '褚志超', '18771567181', '123456'),
-(4, 'chuzhichao2', '123456', '123456');
+  `upass` varchar(100) DEFAULT NULL COMMENT '登录密码',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='聊天室用户表';
 
 
 
-###
+测试账号 ：  admin   123456

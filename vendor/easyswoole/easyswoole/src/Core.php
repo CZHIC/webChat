@@ -9,31 +9,25 @@
 namespace EasySwoole\EasySwoole;
 
 
-use EasySwoole\Actor\Actor;
 use EasySwoole\Component\Di;
 use EasySwoole\Component\Singleton;
-use EasySwoole\Console\Console;
-use EasySwoole\Console\ConsoleModuleContainer;
 use EasySwoole\EasySwoole\AbstractInterface\Event;
-use EasySwoole\EasySwoole\Console\Module\Auth;
-use EasySwoole\EasySwoole\Console\Module\Log;
-use EasySwoole\EasySwoole\Console\Module\Server;
 use EasySwoole\EasySwoole\Crontab\Crontab;
 use EasySwoole\EasySwoole\Swoole\EventHelper;
 use EasySwoole\EasySwoole\Swoole\EventRegister;
-use EasySwoole\EasySwoole\Swoole\Task\QuickTaskInterface;
-use EasySwoole\FastCache\Cache;
+use EasySwoole\EasySwoole\Task\TaskManager;
 use EasySwoole\Http\Dispatcher;
 use EasySwoole\Http\Message\Status;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
-use EasySwoole\Trace\AbstractInterface\LoggerInterface;
-use EasySwoole\Trace\AbstractInterface\TriggerInterface;
-use EasySwoole\Trace\Bean\Location;
-use EasySwoole\EasySwoole\Swoole\Task\AbstractAsyncTask;
-use EasySwoole\EasySwoole\Swoole\Task\SuperClosure;
-use Swoole\Server\Task;
-use EasySwoole\Console\Config as ConsoleConfig;
+use EasySwoole\Log\LoggerInterface;
+use EasySwoole\Trigger\Location;
+use EasySwoole\Trigger\TriggerInterface;
+use EasySwoole\Utility\File;
+use EasySwoole\Log\Logger as DefaultLogger;
+use EasySwoole\Trigger\Trigger as DefaultTrigger;
+use EasySwoole\Task\Config as TaskConfig;
+use Swoole\Timer;
 
 ////////////////////////////////////////////////////////////////////
 //                          _ooOoo_                               //
@@ -66,10 +60,11 @@ class Core
     function __construct()
     {
         defined('SWOOLE_VERSION') or define('SWOOLE_VERSION',intval(phpversion('swoole')));
-        defined('EASYSWOOLE_ROOT') or define('EASYSWOOLE_ROOT',realpath(getcwd()));
+        defined('EASYSWOOLE_ROOT') or define('EASYSWOOLE_ROOT', realpath(getcwd()));
         defined('EASYSWOOLE_SERVER') or define('EASYSWOOLE_SERVER',1);
         defined('EASYSWOOLE_WEB_SERVER') or define('EASYSWOOLE_WEB_SERVER',2);
         defined('EASYSWOOLE_WEB_SOCKET_SERVER') or define('EASYSWOOLE_WEB_SOCKET_SERVER',3);
+        defined('EASYSWOOLE_REDIS_SERVER') or define('EASYSWOOLE_REDIS_SERVER',4);
     }
 
     function setIsDev(bool $isDev)
@@ -129,7 +124,7 @@ class Core
     {
         //给主进程也命名
         $serverName = Config::getInstance()->getConf('SERVER_NAME');
-        if(PHP_OS != 'Darwin'){
+        if(!in_array(PHP_OS,['Darwin','CYGWIN','WINNT'])){
             cli_set_process_title($serverName);
         }
         //启动
@@ -147,7 +142,7 @@ class Core
             $tempDir = rtrim($tempDir,'/');
         }
         if(!is_dir($tempDir)){
-            mkdir($tempDir);
+            File::createDirectory($tempDir);
         }
         defined('EASYSWOOLE_TEMP_DIR') or define('EASYSWOOLE_TEMP_DIR',$tempDir);
 
@@ -159,13 +154,17 @@ class Core
             $logDir = rtrim($logDir,'/');
         }
         if(!is_dir($logDir)){
-            mkdir($logDir);
+            File::createDirectory($logDir);
         }
-        defined('EASYSWOOLE_LOG_DIR') or define('EASYSWOOLE_LOG_DIR',$logDir);
+        defined('EASYSWOOLE_LOG_DIR') or define('EASYSWOOLE_LOG_DIR', $logDir);
 
-        //设置默认文件目录值
-        Config::getInstance()->setConf('MAIN_SERVER.SETTING.pid_file',$tempDir.'/pid.pid');
-        Config::getInstance()->setConf('MAIN_SERVER.SETTING.log_file',$logDir.'/swoole.log');
+        // 设置默认文件目录值(如果自行指定了目录则优先使用指定的)
+        if (!Config::getInstance()->getConf('MAIN_SERVER.SETTING.pid_file')) {
+            Config::getInstance()->setConf('MAIN_SERVER.SETTING.pid_file', $tempDir . '/pid.pid');
+        }
+        if (!Config::getInstance()->getConf('MAIN_SERVER.SETTING.log_file')) {
+            Config::getInstance()->setConf('MAIN_SERVER.SETTING.log_file', $logDir . '/swoole.log');
+        }
     }
 
     private function registerErrorHandler()
@@ -176,18 +175,14 @@ class Core
         //初始化配置Logger
         $logger = Di::getInstance()->get(SysConst::LOGGER_HANDLER);
         if(!$logger instanceof LoggerInterface){
-            $logger = new \EasySwoole\Trace\Logger(EASYSWOOLE_LOG_DIR);
+            $logger = new DefaultLogger(EASYSWOOLE_LOG_DIR);
         }
         Logger::getInstance($logger);
 
         //初始化追追踪器
         $trigger = Di::getInstance()->get(SysConst::TRIGGER_HANDLER);
         if(!$trigger instanceof TriggerInterface){
-            /*
-             * DISPLAY_ERROR
-             */
-            $display = Config::getInstance()->getConf('DISPLAY_ERROR');
-            $trigger = new \EasySwoole\Trace\Trigger(Logger::getInstance(),$display);
+            $trigger = new DefaultTrigger(Logger::getInstance());
         }
         Trigger::getInstance($trigger);
 
@@ -223,7 +218,7 @@ class Core
         /*
          * 注册默认回调
          */
-        if($serverType !== EASYSWOOLE_SERVER){
+        if(in_array($serverType,[EASYSWOOLE_WEB_SERVER,EASYSWOOLE_WEB_SOCKET_SERVER],true)){
             $namespace = Di::getInstance()->get(SysConst::HTTP_CONTROLLER_NAMESPACE);
             if(empty($namespace)){
                 $namespace = 'App\\HttpController\\';
@@ -270,104 +265,21 @@ class Core
                 $response_psr->__response();
             });
         }
-        //注册默认的on task,finish  不经过 event register。因为on task需要返回值。不建议重写onTask,否则es自带的异步任务事件失效
-        //其次finish逻辑在同进程中实现、
-        if(Config::getInstance()->getConf('MAIN_SERVER.SETTING.task_enable_coroutine')){
-            EventHelper::on($server,EventRegister::onTask,function (\swoole_server $server, Task $task){
-                $taskObj = $task->data;
-                if(is_string($taskObj) && class_exists($taskObj)){
-                    $ref = new \ReflectionClass($taskObj);
-                    if($ref->implementsInterface(QuickTaskInterface::class)){
-                        try{
-                            $taskObj::run($server,$task->id,$task->worker_id,$task->flags);
-                        }catch (\Throwable $throwable){
-                            Trigger::getInstance()->throwable($throwable);
-                        }
-                        return;
-                    }else if($ref->isSubclassOf(AbstractAsyncTask::class)){
-                        $taskObj = new $taskObj;
-                    }
-                }
-                if($taskObj instanceof AbstractAsyncTask){
-                    try{
-                        $ret = $taskObj->__onTaskHook($task->id,$task->worker_id,$task->flags);
-                        if($ret !== null){
-                            $taskObj->__onFinishHook($ret,$task->id);
-                        }
-                    }catch (\Throwable $throwable){
-                        Trigger::getInstance()->throwable($throwable);
-                    }
-                }else if($taskObj instanceof SuperClosure){
-                    try{
-                        return $taskObj( $server, $task->id,$task->worker_id,$task->flags);
-                    }catch (\Throwable $throwable){
-                        Trigger::getInstance()->throwable($throwable);
-                    }
-                }else if(is_callable($taskObj)){
-                    try{
-                        call_user_func($taskObj,$server,$task->id,$task->worker_id,$task->flags);
-                    }catch (\Throwable $throwable){
-                        Trigger::getInstance()->throwable($throwable);
-                    }
-                }
-                return null;
-            });
-        }else{
-            EventHelper::on($server,EventRegister::onTask,function (\swoole_server $server, $taskId, $fromWorkerId,$taskObj){
-                if(is_string($taskObj) && class_exists($taskObj)){
-                    $ref = new \ReflectionClass($taskObj);
-                    if($ref->implementsInterface(QuickTaskInterface::class)){
-                        try{
-                            $taskObj::run($server,$taskId,$fromWorkerId);
-                        }catch (\Throwable $throwable){
-                            Trigger::getInstance()->throwable($throwable);
-                        }
-                        return;
-                    }else if($ref->isSubclassOf(AbstractAsyncTask::class)){
-                        $taskObj = new $taskObj;
-                    }
-                }
-                if($taskObj instanceof AbstractAsyncTask){
-                    try{
-                        $ret = $taskObj->__onTaskHook($taskId,$fromWorkerId);
-                        if($ret !== null){
-                            $taskObj->__onFinishHook($ret,$taskId);
-                        }
-                    }catch (\Throwable $throwable){
-                        Trigger::getInstance()->throwable($throwable);
-                    }
-                }else if($taskObj instanceof SuperClosure){
-                    try{
-                        return $taskObj( $server, $taskId, $fromWorkerId);
-                    }catch (\Throwable $throwable){
-                        Trigger::getInstance()->throwable($throwable);
-                    }
-                }else if(is_callable($taskObj)){
-                    try{
-                        call_user_func($taskObj,$server,$taskId,$fromWorkerId);
-                    }catch (\Throwable $throwable){
-                        Trigger::getInstance()->throwable($throwable);
-                    }
-                }
-                return null;
-            });
-        }
 
-        EventHelper::on($server,EventRegister::onFinish,function (){
-            //空逻辑
-        });
-
+        $register = ServerManager::getInstance()->getMainEventRegister();
         //注册默认的worker start
-        EventHelper::registerWithAdd(ServerManager::getInstance()->getMainEventRegister(),EventRegister::onWorkerStart,function (\swoole_server $server,$workerId){
-            if(PHP_OS != 'Darwin'){
+        EventHelper::registerWithAdd($register,EventRegister::onWorkerStart,function (\swoole_server $server,$workerId){
+            if(!in_array(PHP_OS,['Darwin','CYGWIN','WINNT'])){
                 $name = Config::getInstance()->getConf('SERVER_NAME');
                 if( ($workerId < Config::getInstance()->getConf('MAIN_SERVER.SETTING.worker_num')) && $workerId >= 0){
                     $type = 'Worker';
-                }else{
-                    $type = 'TaskWorker';
+                    cli_set_process_title("{$name}.{$type}.{$workerId}");
                 }
-                cli_set_process_title("{$name}.{$type}.{$workerId}");
             }
+        });
+
+        EventHelper::registerWithAdd($register,$register::onWorkerExit,function (){
+            Timer::clearAll();
         });
     }
 
@@ -384,35 +296,16 @@ class Core
 
     private function extraHandler()
     {
-        $serverName = Config::getInstance()->getConf('SERVER_NAME');
-
-        //注册Console
-        if(Config::getInstance()->getConf('CONSOLE.ENABLE')){
-            $config = Config::getInstance()->getConf('CONSOLE');
-            ServerManager::getInstance()->addServer('CONSOLE',$config['PORT'],SWOOLE_TCP,$config['LISTEN_ADDRESS']);
-            Console::getInstance()->attachServer(ServerManager::getInstance()->getSwooleServer('CONSOLE'),new ConsoleConfig());
-            Console::getInstance()->setServer(ServerManager::getInstance()->getSwooleServer());
-            ServerManager::getInstance()->getSwooleServer('CONSOLE')->on('close',function (){
-                Auth::$authTable->set(Config::getInstance()->getConf('CONSOLE.USER'),[
-                    'fd'=>0
-                ]);
-            });
-            ConsoleModuleContainer::getInstance()->set(new Auth());
-            ConsoleModuleContainer ::getInstance()->set(new Server());
-            ConsoleModuleContainer ::getInstance()->set(new Log());
-        }
         //注册crontab进程
         Crontab::getInstance()->__run();
-        //注册fastCache进程
-        if(Config::getInstance()->getConf('FAST_CACHE.PROCESS_NUM') > 0){
-            Cache::getInstance()->setTempDir(EASYSWOOLE_TEMP_DIR)
-                ->setProcessNum(Config::getInstance()->getConf('FAST_CACHE.PROCESS_NUM'))
-                ->setBacklog(Config::getInstance()->getConf('FAST_CACHE.BACKLOG'))
-                ->setServerName($serverName)
-                ->attachToServer(ServerManager::getInstance()->getSwooleServer());
-        }
-        //执行Actor注册进程
-        Actor::getInstance()->setTempDir(EASYSWOOLE_TEMP_DIR)->setServerName($serverName)->attachToServer(ServerManager::getInstance()->getSwooleServer());
-
+        //注册Task进程
+        $config = Config::getInstance()->getConf('MAIN_SERVER.TASK');
+        $config = new TaskConfig($config);
+        $config->setTempDir(EASYSWOOLE_TEMP_DIR);
+        $config->setServerName(Config::getInstance()->getConf('SERVER_NAME'));
+        $config->setOnException(function (\Throwable $throwable){
+            Trigger::getInstance()->throwable($throwable);
+        });
+        TaskManager::getInstance($config)->attachToServer(ServerManager::getInstance()->getSwooleServer());
     }
 }

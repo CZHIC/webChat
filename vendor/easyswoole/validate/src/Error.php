@@ -34,6 +34,9 @@ class Error
         'dateBefore'          => ':fieldName必须在日期 :arg0 之前',
         'dateAfter'           => ':fieldName必须在日期 :arg0 之后',
         'equal'               => ':fieldName必须等于:arg0',
+        'different'           => ':fieldName必须不等于:arg0',
+        'equalWithColumn'     => ':fieldName必须等于:arg0的值',
+        'differentWithColumn' => ':fieldName必须不等于:arg0的值',
         'float'               => ':fieldName只能是浮点数',
         'func'                => ':fieldName自定义验证失败',
         'inArray'             => ':fieldName必须在 :arg0 范围内',
@@ -119,7 +122,7 @@ class Error
      * 获取字段别名
      * @return string
      */
-    public function getFieldAlias(): string
+    public function getFieldAlias(): ?string
     {
         return $this->fieldAlias;
     }
